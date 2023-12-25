@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+{% block title %}Library Loan System - Collectibles - View All{% endblock %}
+
+{% block content %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collectibles - View All</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+input[type=text], input[type=number], input[type=email]{
+  height: 20px;}
+
+input[type=text], input[type=number], input[type=email], textarea{
+  width: 200px;}
+
+body {
+  font-family: Agrandir, Source Serif Pro, Agrandir Grand;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #CCE6DA;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  text-decoration: underline;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E0EFE8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #CCE6DA;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.right{
+ text-align: center;
+}
+
+.checked {
+  color: orange;
+}
+
+table{
+  float:center;
+  width: 900px;
+  height: 200px;
+}
+    </style>
+</head>
+<body>
+<nav>
+    <div class="navbar">
+        <img src="images/logo.png" style="float:left">
+        <strong style="float: left;">Earthly Pages</strong>
+        <a href="profile.html"><i style="font-size:24px" class="fa">&#xf007;</i></a>
+        <a href="cart.html"><i style="font-size:24px" class="fa">&#xf07a;</i></a>
+</div>
+</nav>
+<br>
+<div class="right">
+<a href="profile.html"><i style="font-size:100px" class="fa">&#xf007;</i></a><br>
+<button style="background-color:#4C7D66; color:white;">Change Profile Picture</button>
+    <form>
+        <h3>Account Info</h3>
+        <input type="text" name="user" id="user" placeholder="Username"><br><br>
+        <input type="text" name="pwd" id="pwd" placeholder="Password"><br>
+        <br><br>
+        <h3>Security</h3>
+        <input type="text" name="pwd2" id="pwd2" placeholder="Enter New Password"><br><br>
+        <input type="text" placeholder="Re-enter New Password"><br><br>
+        <input type="submit" value="Save" style="background-color:#E0EFE8; color:black;">
+    </form>
+</div>
+<br><br><br><br>
+<center>
+<h3>Manage Reviews</h3>
+<table border="1">
+    <tr>
+        <th style="color:#759F82;text-align:center;">Title</th>
+        <th style="color:#759F82;text-align:center;">Rating</th>
+        <th style="color:#759F82;text-align:center;">Review</th>
+    </tr>
+    <tr>
+<!--        first book-->
+        <td style="color:#759F82;text-align:center;">Villians are destined to die</td>
+        <td>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        </td>
+        <td style="color:#759F82;">The book came in a good state with no damage to the book <button style="background-color:#E0EFE8; color:black;">Edit</button></td>
+    </tr>
+    <tr>
+        <td style="color:#759F82;text-align:center;">You've reached Sam</td>
+        <td>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </td>
+        <td style="color:#759F82;">The plot-twist was unexpected <button style="background-color:#E0EFE8; color:black;">Edit</button></td>
+    </tr>
+    <tr>
+        <td style="color:#759F82;text-align:center;">XOXO</td>
+        <td>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </td>
+        <td style="color:#759F82;">Yummy story that filled my heart with joy and laughter <button style="background-color:#E0EFE8; color:black;">Edit</button></td>
+    </tr>
+</table>
+    <h3>Orders</h3>
+    <table border="1">
+        <tr>
+            <th style="color:#759F82;text-align:center;">Order No.</th>
+            <th style="color:#759F82;text-align:center;">Status</th>
+            <th style="color:#759F82;text-align:center;">Received</th>
+        </tr>
+        <tr>
+            <td style="color:#759F82;text-align:center;">Q123456Y</td>
+            <td style="color:#759F82;text-align:center;">Out for Delivery</td>
+            <td style="color:#759F82;text-align:center;">No</td>
+        </tr>
+        <tr>
+            <td style="color:#759F82;text-align:center;">O938478G</td>
+            <td style="color:#759F82;text-align:center;">Completed</td>
+            <td style="color:#759F82;text-align:center;">Yes</td>
+        </tr>
+        <tr>
+            <td style="color:#759F82;text-align:center;">H583948B</td>
+            <td style="color:#759F82;text-align:center;">Completed</td>
+            <td style="color:#759F82;text-align:center;">Yes</td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Library Loan System - Sign Up{% endblock %}
+
+{% block content %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>\
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .sign{
+        text-align:center;
+        }
+
+body {
+  font-family: Agrandir, Source Serif Pro, Agrandir Grand;
+}
+    </style>
+</head>
+<body>
+<div class="sign">
+    <img src="images/logo.png" alt="logo">
+    <h2>Earthly Pages</h2>
+    <h4>Welcome!</h4>
+    <br>
+    <form>
+        <label>Username:</label><br>
+        <input type="text" placeholder="Create Username" id="user" name="user" required><br><br>
+        <label>Password:</label><br>
+        <input type="text" placeholder="Create Password" id="pwd" name="pwd" required><br><br>
+        <input type="radio">Remember Me<br><br>
+        <a href="home.html"><button style="background-color: #4C7D66; color: white;">Sign Up!</button></a><br>
+        <hr>
+        <p>OR</p>
+        <a href="https://www.instagram.com/"><i style="font-size:54px" class="fa">&#xf16d;</i></a>
+        <a href="https://www.facebook.com/"><i style="font-size:54px" class="fa">&#xf082;</i></a>
+    </form>
+</div>
+</body>
+</html>
+{% endblock %}
